@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Hello Microverse project
+> Personal Portfolio project
 
 ## Built With
 
