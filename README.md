@@ -11,7 +11,7 @@
 
 ## Getting Started
 
-**This project includes linters for Reporting errors in HTML, CSS and An open-source, automated tool for improving the quality of web pages, which has audits for performance, accessibility, progressive web apps, SEO and more.**
+**This project includes linters for Reporting errors in HTML, CSS and An open-source, automated tool for improving the quality of web pages, which has audits for performance, accessibility, progressive web apps, SEO and more. It is a summary of all my works and known technologies**
 
 To get a local copy up and running follow these simple example steps.
 
@@ -26,13 +26,29 @@ To get a local copy up and running follow these simple example steps.
 
 Set up folder as:
 
-1. /Hello World
-   -.github/workflows - linters.yml
-   - Package.json
-   - index.html
-   - style.css
-   - .stylelintrc.json
-   - .hintrc
+/Portfolio-project
+-.github/workflows - linters.yml
+
+- Package.json
+- index.html
+- /CSS
+  - style.css
+- /img
+  -/icons
+  - angellist.svg
+  - circle 2 header.svg
+  - down-arrow.svg
+  - email.png
+  - github.svg
+  - hamburger.svg
+  - linkedIn.svg
+  - medium.svg
+  - twitter.svg
+  - vector.svg
+  - work.svg
+    shapes.png
+- .stylelintrc.json
+- .hintrc
 
 ### Install
 
@@ -67,7 +83,6 @@ npx stylelint "**/*.{css,scss}"
 ## 🤝 Contributing
 
 - GitHub: [@githubhandle](https://github.com/KebebewAbabu)
-- GitHub: [@githubhandle](https://github.com/iambenkis)
 
 Contributions, issues, and feature requests are welcome!
 
