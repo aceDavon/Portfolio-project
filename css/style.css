@@ -14,8 +14,7 @@ body {
   background-size: 220px;
 }
 
-a:hover,
-button:hover {
+a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -226,6 +225,9 @@ main {
   display: grid;
   grid-template-rows: repeat(1fr);
   margin: 15px 0;
+  background-image: url("../img/icons/Ellipse_19.svg");
+  background-repeat: no-repeat;
+  background-position-y: 255px;
 }
 
 .grid-section hr,
@@ -234,10 +236,19 @@ main {
   margin: 45px auto;
 }
 
-.card-footer button {
+.btn {
   padding: 10px;
-  background-color: rebeccapurple;
+  background-color: rgb(128, 117, 244);
   color: white;
   border: none;
   width: 105px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 1px 4px 4px rgba(54, 54, 54, 0.082);
+}
+
+.btn:enabled {
+  background-color: rgb(66, 58, 158);
 }
