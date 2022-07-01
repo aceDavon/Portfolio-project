@@ -46,8 +46,7 @@ main {
 }
 
 .jumbotron,
-.links,
-.card-section {
+.links {
   width: 75%;
   margin: auto;
   position: relative;
@@ -173,14 +172,24 @@ main {
 .card-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 25px;
   margin-top: 85px;
+}
+
+.fluid {
+  background-image: url("../img/icons/Ellipse_20.svg");
+  background-repeat: no-repeat;
+  background-position-x: 400px;
+  background-position-y: 25px;
+  background-size: 230px;
 }
 
 .cards {
   max-width: 320px;
   height: min-content;
+  width: 75%;
+  margin: auto;
+  background: none;
 }
 
 .cards img {
@@ -196,6 +205,15 @@ main {
 
 .card-txt h3 {
   margin: 30px 0;
+  font-weight: 500;
+  font-size: 32px;
+}
+.card-txt p {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
 }
 
 .card-footer-listItem {
@@ -236,6 +254,12 @@ main {
   margin: 45px auto;
 }
 
+.alt-title {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: left;
+}
+
 .btn {
   padding: 10px;
   background-color: rgb(128, 117, 244);
@@ -247,8 +271,22 @@ main {
 
 .btn:hover {
   box-shadow: 1px 4px 4px rgba(54, 54, 54, 0.082);
+  background-color: #8075f4;
 }
 
 .btn:enabled {
-  background-color: rgb(66, 58, 158);
+  background-color: #8075f4;
+}
+
+.btn:active {
+  background-color: #6266d8;
+}
+
+.btn:disabled {
+  background-color: #000;
+}
+
+.bars {
+  border-right: 1px solid white;
+  margin-right: 4px;
 }
