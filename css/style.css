@@ -14,6 +14,11 @@ body {
   background-size: 220px;
 }
 
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .top-nav,
 .menu-list {
   display: flex;
@@ -33,6 +38,11 @@ body {
 
 main {
   margin-top: 70px;
+  background-image: url("../img/icons/circle-2-header.svg");
+  background-repeat: no-repeat;
+  background-position-x: 550px;
+  background-position-y: 185px;
+  background-size: 220px;
 }
 
 .jumbotron,
@@ -57,6 +67,10 @@ main {
   color: #9391ff;
 }
 
+.card-section h1 {
+  text-align: start;
+}
+
 .subtitle {
   font-size: larger;
   font-weight: 500;
@@ -74,7 +88,7 @@ main {
 .jumbotron hr,
 .links hr {
   color: #646369;
-  margin: 25px 0;
+  margin: 35px 0;
 }
 
 .menu-list {
@@ -105,7 +119,8 @@ main {
   margin: 4px 0;
 }
 
-.lists a {
+.lists a,
+.card-footer-links {
   text-decoration: none;
   color: #fff;
   font-size: 12.6667px;
@@ -135,4 +150,143 @@ main {
 #arrow-down1 {
   width: 14px;
   height: auto;
+}
+
+.rel-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  list-style-type: none;
+}
+
+.rel-links img {
+  width: 25px;
+  height: auto;
+}
+
+#alt-img {
+  height: 12px;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 85px;
+}
+
+.fluid {
+  background-image: url("../img/icons/Ellipse_20.svg");
+  background-repeat: no-repeat;
+  background-position-x: 400px;
+  background-position-y: 25px;
+  background-size: 230px;
+}
+
+.cards {
+  max-width: 320px;
+  height: min-content;
+  width: 75%;
+  margin: auto;
+  background: none;
+}
+
+.cards img {
+  width: 320px;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-txt {
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.card-txt h3 {
+  margin: 30px 0;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.card-txt p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+}
+
+.card-footer-listItem {
+  margin-right: 6px;
+}
+
+.card-footer-links {
+  text-transform: capitalize;
+  font-size: medium;
+}
+
+.card-footer,
+.card-footer-list {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+}
+
+.alt-menu {
+  flex-direction: row;
+  margin: 12px 0;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-rows: repeat(1fr);
+  margin: 15px 0;
+  background-image: url("../img/icons/Ellipse_19.svg");
+  background-repeat: no-repeat;
+  background-position-y: 255px;
+}
+
+.grid-section hr,
+.alt-title {
+  width: 75%;
+  margin: 45px auto;
+}
+
+.alt-title {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: left;
+}
+
+.btn {
+  padding: 10px;
+  background-color: rgb(128, 117, 244);
+  color: white;
+  border: none;
+  width: 105px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 1px 4px 4px rgba(54, 54, 54, 0.082);
+  background-color: #8075f4;
+}
+
+.btn:enabled {
+  background-color: #8075f4;
+}
+
+.btn:active {
+  background-color: #6266d8;
+}
+
+.btn:disabled {
+  background-color: #000;
+}
+
+.bars {
+  border-right: 1px solid white;
+  margin-right: 4px;
 }
