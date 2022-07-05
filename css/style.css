@@ -334,21 +334,22 @@ main {
   width: 327px;
   padding: 12px 4px;
 }
+
+.form-list textarea {
+  height: 148px;
+}
+
 .form-list input:focus,
 .form-list textarea:focus,
-.form-list textarea {
+.form-list textarea:focus {
   border: 1px solid #9490ff;
   outline: none;
 }
 
 .form-list input:hover,
 .form-list textarea:hover,
-.form-list textarea {
+.form-list textarea:hover {
   border: 1px solid blue;
-}
-
-.form-list textarea {
-  height: 148px;
 }
 
 .btn-alt {
