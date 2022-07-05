@@ -348,6 +348,7 @@ main {
 .btn-alt {
   margin-left: 25%;
   height: 45px;
+  cursor: pointer;
 }
 
 .footer-icons img {
