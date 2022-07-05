@@ -324,11 +324,6 @@ main {
   width: 100%;
 }
 
-.form-list li {
-  width: 65%;
-  margin: auto;
-}
-
 .form-list input,
 .form-list textarea {
   width: 327px;
@@ -351,7 +346,7 @@ main {
 }
 
 .btn-alt {
-  margin-left: 35%;
+  margin-left: 25%;
   height: 45px;
 }
 
