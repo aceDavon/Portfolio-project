@@ -46,7 +46,8 @@ main {
 }
 
 .jumbotron,
-.links {
+.links,
+.contact-form {
   width: 75%;
   margin: auto;
   position: relative;
@@ -289,4 +290,84 @@ main {
 .bars {
   border-right: 1px solid white;
   margin-right: 4px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 65px auto;
+}
+
+.contact-desc {
+  text-align: center;
+  padding: 12px 25px;
+  color: #f5f5ff;
+  font-weight: 400;
+  margin: 15px auto;
+}
+
+.contact-header {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  color: #9390ff;
+  text-transform: uppercase;
+}
+
+.form-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-list li {
+  width: 65%;
+  margin: auto;
+}
+
+.form-list input,
+.form-list textarea {
+  width: 327px;
+  padding: 12px 4px;
+}
+.form-list input:focus,
+.form-list textarea:focus,
+.form-list textarea {
+  border: 1px solid #9490ff;
+  outline: none;
+}
+
+.form-list input:hover,
+.form-list textarea:hover,
+.form-list textarea {
+  border: 1px solid blue;
+}
+
+.form-list textarea {
+  height: 148px;
+}
+
+.btn-alt {
+  margin-left: 35%;
+  height: 45px;
+}
+
+.footer-icons img {
+  width: 25px;
+  margin-right: 16px;
+}
+
+.footer-mail {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ebebff;
+  text-align: center;
+}
+
+.footer-pad {
+  margin-top: 45px;
 }
