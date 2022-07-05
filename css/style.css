@@ -340,14 +340,12 @@ main {
 }
 
 .form-list input:focus,
-.form-list textarea:focus,
 .form-list textarea:focus {
   border: 1px solid #9490ff;
   outline: none;
 }
 
 .form-list input:hover,
-.form-list textarea:hover,
 .form-list textarea:hover {
   border: 1px solid blue;
 }
