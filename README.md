@@ -83,6 +83,7 @@ npx stylelint "**/*.{css,scss}"
 ## 🤝 Contributing
 
 - GitHub: [@githubhandle](https://github.com/KebebewAbabu)
+- GitHub: [@githubhandle](https://github.com/DebbyMiressa)
 
 Contributions, issues, and feature requests are welcome!
 
