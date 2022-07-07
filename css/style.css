@@ -101,10 +101,13 @@ main {
   font-weight: 400;
 }
 
-.jumbotron hr,
-.links hr {
-  color: #646369;
+.divider {
+  border-bottom: 1px solid #646369;
   margin: 35px 0;
+}
+
+.large-line {
+  margin: 35px 50px;
 }
 
 .menu-list {
@@ -126,8 +129,8 @@ main {
 }
 
 .biggi {
-  flex-basis: 180px;
-  max-width: 200px;
+  flex-basis: 200px;
+  max-width: 220px;
   flex-grow: 1;
 }
 
