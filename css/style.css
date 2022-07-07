@@ -55,7 +55,7 @@ main {
   margin-top: 70px;
   background-image: url("../img/icons/circle-2-header.svg");
   background-repeat: no-repeat;
-  background-position-x: 550px;
+  background-position-x: calc(100%);
   background-position-y: 185px;
   background-size: 220px;
 }
