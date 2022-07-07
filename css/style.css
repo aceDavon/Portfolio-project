@@ -61,8 +61,7 @@ main {
 }
 
 .jumbotron,
-.links,
-.contact-form {
+.links {
   width: 75%;
   margin: auto;
   position: relative;
@@ -307,8 +306,10 @@ main {
 .contact-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
   margin: 65px auto;
+  width: 65%;
 }
 
 .contact-desc {
@@ -319,12 +320,17 @@ main {
   margin: 15px auto;
 }
 
-.contact-header {
+.contact-header,
+.desktop-contact-header {
   text-align: center;
   font-weight: 500;
   font-size: 32px;
   color: #9390ff;
   text-transform: uppercase;
+}
+
+.desktop-contact-header {
+  display: none;
 }
 
 .form-list {
@@ -358,7 +364,7 @@ main {
 }
 
 .btn-alt {
-  margin-left: 25%;
+  margin-left: 35%;
   height: 45px;
   cursor: pointer;
 }
@@ -418,6 +424,10 @@ main {
     padding: 2px 25px;
   }
 
+  .fluid-card {
+    flex-direction: row-reverse;
+  }
+
   .card-img {
     width: 60%;
     height: 300px;
@@ -446,5 +456,28 @@ main {
     background-position-y: 25px;
     background-size: 230px;
     padding: 5px 0;
+  }
+
+  .desktop-contact-header {
+    display: inline-block;
+  }
+
+  .contact-header {
+    display: none;
+  }
+
+  .contact-form {
+    width: 45%;
+  }
+
+  .contact-form form {
+    width: 65%;
+    margin: auto;
+  }
+
+  .footer-pad {
+    display: flex;
+    gap: 6px;
+    align-items: center;
   }
 }
