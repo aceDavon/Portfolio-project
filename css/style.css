@@ -480,7 +480,8 @@ main {
 
   .footer-pad {
     display: flex;
-    gap: 6px;
+    justify-content: center;
+    gap: 12px;
     align-items: center;
   }
 }
