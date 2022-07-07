@@ -27,6 +27,21 @@ a:hover {
   padding: 12px 50px;
 }
 
+.top-menu {
+  display: none;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top-menu-item a {
+  color: white;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 12.19px;
+  text-decoration: none;
+}
+
 .logo-txt {
   display: flex;
   align-items: center;
@@ -58,6 +73,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  list-style-type: none;
 }
 
 .title {
@@ -161,6 +177,10 @@ main {
   list-style-type: none;
 }
 
+.top-rel {
+  display: none;
+}
+
 .rel-links img {
   width: 25px;
   height: auto;
@@ -174,7 +194,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 85px;
+  margin: 85px 50px;
 }
 
 .fluid {
@@ -185,17 +205,10 @@ main {
   background-size: 230px;
 }
 
-.cards {
-  max-width: 320px;
-  height: min-content;
-  width: 75%;
-  margin: auto;
-  background: none;
-}
-
-.cards img {
-  width: 320px;
-  height: auto;
+.card-img {
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
   object-fit: contain;
 }
 
@@ -251,8 +264,7 @@ main {
 
 .grid-section hr,
 .alt-title {
-  width: 75%;
-  margin: 45px auto;
+  margin: 45px 50px;
 }
 
 .alt-title {
@@ -365,4 +377,74 @@ main {
 
 .footer-pad {
   margin-top: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .top-menu {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .logo-icon {
+    display: none;
+  }
+
+  .jumbotron,
+  .links {
+    width: 45%;
+    margin: auto;
+  }
+
+  .top-rel {
+    display: inline-block;
+  }
+
+  .biggi {
+    flex-basis: 110px;
+    max-width: 120px;
+  }
+
+  .social-icons {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 25px;
+  }
+
+  .card-img {
+    width: 60%;
+    height: 300px;
+    background-color: #fff;
+  }
+
+  .card-txt {
+    width: 40%;
+    height: min-content;
+  }
+
+  .card-txt h3 {
+    line-height: 25px;
+    font-size: 25px;
+  }
+
+  .card-txt p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .fluid {
+    background-image: url("../img/icons/Ellipse_20.svg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100%);
+    background-position-y: 25px;
+    background-size: 230px;
+    padding: 5px 0;
+  }
 }
