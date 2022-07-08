@@ -99,6 +99,11 @@ main {
   color: #b3bac5;
   margin-top: 45px;
   font-weight: 400;
+  transition: font-size 2s, transform 2s;
+}
+
+.description:hover {
+  transform: scale(0.9);
 }
 
 .divider {
@@ -394,6 +399,11 @@ main {
     list-style-type: none;
   }
 
+  .motion {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
   .logo-icon {
     display: none;
   }
@@ -483,5 +493,17 @@ main {
     justify-content: center;
     gap: 12px;
     align-items: center;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 }
