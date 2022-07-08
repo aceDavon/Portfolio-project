@@ -394,6 +394,11 @@ main {
     list-style-type: none;
   }
 
+  .motion {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
   .logo-icon {
     display: none;
   }
@@ -483,5 +488,17 @@ main {
     justify-content: center;
     gap: 12px;
     align-items: center;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 }
