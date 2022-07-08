@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="top-nav">
-        <a href="#" class="logo-txt"> Makoji David </a>
-        <div class="menu">
-          <img src="./img/icons/hamburger.png" alt="logo-icon" class="logo-icon" />
-        </div>
-      </nav>
-    </header>
+    <nav class="top-nav">
+      <a href="#" class="logo-txt"> Makoji David </a>
+      <div class="menu">
+        <img src="./img/icons/hamburger.png" alt="logo-icon" class="logo-icon" />
+      </div>
+      <ul class="top-menu">
+        <li class="top-menu-item"><a href="#" class="links">portfolio</a></li>
+        <li class="top-menu-item"><a href="#" class="links">about</a></li>
+        <li class="top-menu-item"><a href="#" class="links">contact</a></li>
+        <li class="top-menu-item">
+          <a href="#" class="links"><img src="./img/icons/email.png" alt="mail-icon" /></a>
+        </li>
+      </ul>
+    </nav>
     <main>
       <section class="jumbotron">
         <h1 class="title">Onate Makoji David</h1>
@@ -24,7 +30,7 @@
           I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need
           coded, don’t hestiate to contact me.
         </p>
-        <hr />
+        <div class="divider"></div>
       </section>
       <div class="links">
         <div class="menu-list">
@@ -52,9 +58,13 @@
             <li class="list-item"><a href="#" class="list-links">Terminal</a></li>
           </ul>
         </div>
-        <hr />
+        <div class="divider"></div>
       </div>
       <div class="social-icons">
+        <div class="rel-links top-rel">
+          <a href="#"><img id="alt-img" src="./img/icons/down-arrow.png" alt="down-arrow-icon" /></a>
+          <a href="#"><img src="./img/icons/Work.svg" alt="work-icon" /></a>
+        </div>
         <ul class="social-links">
           <li>
             <a href="#"><img src="./img/icons/github.svg" alt="github-icon" /></a>
@@ -73,22 +83,46 @@
           </li>
         </ul>
         <div class="rel-links">
-          <a href="#"><img id="alt-img" src="./img/icons/down-arrow.png" alt="down-arrow-icon" /></a>
+          <a href="#"><img src="./img/icons/down-arrow.png" alt="down-arrow-icon" /></a>
           <a href="#"><img src="./img/icons/Work.svg" alt="work-icon" /></a>
         </div>
       </div>
       <section class="grid-section">
         <h2 class="title alt-title">My Recent Works</h2>
-        <hr />
+        <div class="divider large-line"></div>
         <section class="card-section">
-          <div class="cards top-card">
-            <img src="./img/linting-tools.webp" alt="linters-image" />
-            <div class="card-txt">
-              <h3>HTML/CSS linters</h3>
-              <p>A linters project for HTML and CSS.</p>
+          <div class="card-img"></div>
+          <div class="card-txt">
+            <h3>HTML/CSS linters</h3>
+            <p>
+              Linters help to correct common errors that are hard to detect on the code base. It helps to enforce some level of professionality and code
+              standard for better optimization and readability
+            </p>
+            <div class="card-footer">
+              <ul class="card-footer-list alt-menu">
+                <li class="card-footer-listItem">
+                  <a href="#" class="card-footer-links">html</a>
+                </li>
+                <li class="bars"></li>
+                <li class="card-footer-listItem">
+                  <a href="#" class="card-footer-links">css</a>
+                </li>
+                <li class="bars"></li>
+                <li class="card-footer-listItem">
+                  <a href="#" class="card-footer-links">github</a>
+                </li>
+              </ul>
+              <button class="btn" type="button">See project</button>
+            </div>
+          </div>
+        </section>
+        <div class="fluid">
+          <section class="card-section fluid-card">
+            <div class="card-img"></div>
+            <div class="card-txt fluid-text">
+              <h3>A personal portfolio project.</h3>
               <p>
-                Linters help to correct common errors that are hard to detect on the code base. It helps to enforce some level of professionality and code
-                standard for better optimization and readability
+                Professional portfolio site built with HTML/CSS with standard githubflow. Built to satisfy professional standards of designs and adaptability.
               </p>
               <div class="card-footer">
                 <ul class="card-footer-list alt-menu">
@@ -107,40 +141,12 @@
                 <button class="btn" type="button">See project</button>
               </div>
             </div>
-          </div>
-        </section>
-        <div class="fluid">
-          <section class="card-section">
-            <div class="cards alt-card">
-              <img src="./img/html-css.jpg" alt="html/css-image" />
-              <div class="card-txt">
-                <h3>A personal portfolio project built with HTML and CSS.</h3>
-                <p>
-                  Professional portfolio site built with HTML/CSS with standard githubflow. Built to satisfy professional standards of designs and adaptability.
-                </p>
-                <div class="card-footer">
-                  <ul class="card-footer-list alt-menu">
-                    <li class="card-footer-listItem">
-                      <a href="#" class="card-footer-links">html</a>
-                    </li>
-                    <li class="bars"></li>
-                    <li class="card-footer-listItem">
-                      <a href="#" class="card-footer-links">css</a>
-                    </li>
-                    <li class="bars"></li>
-                    <li class="card-footer-listItem">
-                      <a href="#" class="card-footer-links">github</a>
-                    </li>
-                  </ul>
-                  <button class="btn" type="button">See project</button>
-                </div>
-              </div>
-            </div>
           </section>
         </div>
       </section>
       <section class="contact-form">
         <h1 class="contact-header">Contact Us</h1>
+        <h1 class="desktop-contact-header">Let's Chat</h1>
         <div class="contact-group">
           <p class="contact-desc">
             If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
@@ -150,10 +156,13 @@
               <li><input type="text" name="fullname" required maxlength="30" placeholder="Text Input" /></li>
               <li><input type="email" name="email" required placeholder="debmirmij@gmail.com" /></li>
               <li><textarea name="message" required maxlength="500" placeholder="Enter text Here"></textarea></li>
-              <li><button class="btn btn-alt" type="submit">See Project</button></li>
+              <li><button class="btn btn-alt" type="submit">Send</button></li>
             </ul>
           </form>
         </div>
+      </section>
+      <div>
+        <div class="divider large-line"></div>
         <div class="social-icons footer-pad">
           <ul class="social-links footer-icons">
             <li>
@@ -174,7 +183,7 @@
           </ul>
           <p class="footer-mail">makojidavid@gmail.com</p>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
