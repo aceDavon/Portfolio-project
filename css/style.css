@@ -99,6 +99,11 @@ main {
   color: #b3bac5;
   margin-top: 45px;
   font-weight: 400;
+  transition: font-size 2s, transform 2s;
+}
+
+.description:hover {
+  transform: scale(0.9);
 }
 
 .divider {
