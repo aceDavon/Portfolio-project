@@ -73,6 +73,7 @@ npx stylelint "**/*.{css,scss}"
 ```
 
 ### Deployment
+Deploy the project with github pages from settings on the repo, select the main branch of the project and save.
 
 ## Authors
 
