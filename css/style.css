@@ -87,8 +87,8 @@ main {
 }
 
 .subtitle {
-  font-size: larger;
-  font-weight: 500;
+  font-size: x-large;
+  font-weight: 800;
   color: #fff;
   text-transform: capitalize;
   text-align: center;
