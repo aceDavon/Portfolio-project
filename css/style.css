@@ -351,6 +351,10 @@ main {
   width: 100%;
 }
 
+.form-list label {
+  display: none;
+}
+
 .form-list input,
 .form-list textarea {
   width: 327px;
