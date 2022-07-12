@@ -6,8 +6,9 @@
 
 body {
   background-color: rgb(29, 44, 101);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-image: url("../img/icons/circle-2-header.svg");
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url('../img/icons/circle-2-header.svg');
   background-repeat: no-repeat;
   background-position-x: -130px;
   background-position-y: 25px;
@@ -53,7 +54,7 @@ a:hover {
 
 main {
   margin-top: 70px;
-  background-image: url("../img/icons/circle-2-header.svg");
+  background-image: url('../img/icons/circle-2-header.svg');
   background-repeat: no-repeat;
   background-position-x: calc(100%);
   background-position-y: 185px;
@@ -205,7 +206,7 @@ main {
 }
 
 .fluid {
-  background-image: url("../img/icons/Ellipse_20.svg");
+  background-image: url('../img/icons/Ellipse_20.svg');
   background-repeat: no-repeat;
   background-position-x: 400px;
   background-position-y: 25px;
@@ -264,7 +265,7 @@ main {
   display: grid;
   grid-template-rows: repeat(1fr);
   margin: 15px 0;
-  background-image: url("../img/icons/Ellipse_19.svg");
+  background-image: url('../img/icons/Ellipse_19.svg');
   background-repeat: no-repeat;
   background-position-y: 255px;
 }
@@ -282,7 +283,7 @@ main {
 
 .btn {
   padding: 10px;
-  background-color: rgb(128, 117, 244);
+  background-color: rgb(27, 7, 249);
   color: white;
   border: none;
   width: 105px;
@@ -463,7 +464,7 @@ main {
   }
 
   .fluid {
-    background-image: url("../img/icons/Ellipse_20.svg");
+    background-image: url('../img/icons/Ellipse_20.svg');
     background-repeat: no-repeat;
     background-position-x: calc(100%);
     background-position-y: 25px;
