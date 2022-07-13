@@ -87,6 +87,7 @@ Deploy the project with github pages from settings on the repo, select the main 
 
 - GitHub: [@githubhandle](https://github.com/KebebewAbabu)
 - GitHub: [@githubhandle](https://github.com/DebbyMiressa)
+- GitHub: [@githubhandle](https://github.com/Rn486)
 
 Contributions, issues, and feature requests are welcome!
 
