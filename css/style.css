@@ -26,6 +26,10 @@ a:hover {
   padding: 12px 50px;
 }
 
+.top-nav {
+  position: relative;
+}
+
 .top-menu {
   display: none;
   gap: 12px;
@@ -340,13 +344,18 @@ main {
   display: none;
 }
 
+form {
+  width: 85%;
+  margin: auto;
+}
+
 .form-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  width: 100%;
+  margin: auto;
 }
 
 .form-list label {
@@ -394,6 +403,33 @@ main {
 
 .footer-pad {
   margin-top: 45px;
+}
+
+.close {
+  display: none;
+}
+
+.visible {
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  padding: 12px 50px;
+  list-style-type: none;
+  background-color: inherit;
+}
+
+.hide {
+  display: none;
+}
+
+.close.visible {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 75%;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
