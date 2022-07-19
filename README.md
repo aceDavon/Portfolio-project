@@ -73,6 +73,7 @@ npx stylelint "**/*.{css,scss}"
 ```
 
 ### Deployment
+
 Deploy the project with github pages from settings on the repo, select the main branch of the project and save.
 
 ## Authors
@@ -88,6 +89,7 @@ Deploy the project with github pages from settings on the repo, select the main 
 - GitHub: [@githubhandle](https://github.com/KebebewAbabu)
 - GitHub: [@githubhandle](https://github.com/DebbyMiressa)
 - GitHub: [@githubhandle](https://github.com/Rn486)
+- GitHub: [@githubhandle](https://github.com/SurafelGetachewT)
 
 Contributions, issues, and feature requests are welcome!
 
