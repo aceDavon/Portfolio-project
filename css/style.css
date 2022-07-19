@@ -15,6 +15,7 @@ body {
   background-position-x: -130px;
   background-position-y: 25px;
   background-size: 220px;
+  font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
@@ -444,7 +445,7 @@ form {
 .drop-menu a {
   font-size: 24px;
   font-weight: 500;
-  line-height: 12px;
+  line-height: 32px;
   color: #edecff;
   text-decoration: none;
 }
@@ -464,6 +465,11 @@ form {
   display: none;
 }
 
+.close img {
+  width: 38px;
+  height: 28px;
+}
+
 .menu:hover ~ .menu-container {
   transform: scaleY(0.9);
 }
@@ -479,7 +485,7 @@ form {
 .close.visible {
   position: absolute;
   display: inline-block;
-  top: 0;
+  top: 8px;
   left: 85%;
   z-index: 1;
 }
