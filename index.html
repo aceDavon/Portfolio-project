@@ -14,22 +14,22 @@
   <body>
     <nav class="top-nav">
       <a href="#" class="logo-txt"> Makoji David </a>
-      <div class="menu">
+      <div class="menu" id="hamburger">
         <img
-          src="./img/icons/hamburger.png"
+          src="./img/icons/hamburger.svg"
           alt="logo-icon"
           class="logo-icon"
         />
       </div>
       <ul class="top-menu">
         <li class="top-menu-item motion">
-          <a href="#" class="links">portfolio</a>
+          <a href="#portfolio" class="links">portfolio</a>
         </li>
         <li class="top-menu-item motion">
-          <a href="#" class="links">about</a>
+          <a href="#about" class="links">about</a>
         </li>
         <li class="top-menu-item motion">
-          <a href="#" class="links">contact</a>
+          <a href="#contact" class="links">contact</a>
         </li>
         <li class="top-menu-item motion">
           <a href="#" class="links"
@@ -37,9 +37,37 @@
           /></a>
         </li>
       </ul>
+      <div class="menu-container" id="topMenu">
+        <div class="close" id="close">
+          <img src="./img/icons/close_white_48dp.svg" alt="close-icon" />
+        </div>
+        <ul class="drop-menu">
+          <li>
+            <a href="#portfolio">Portfolio</a>
+            <img
+              src="./img/icons/keyboard_arrow_right_white_48dp.svg"
+              alt="pointer1"
+            />
+          </li>
+          <li>
+            <a href="#about">About</a>
+            <img
+              src="./img/icons/keyboard_arrow_right_white_48dp.svg"
+              alt="pointer2"
+            />
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+            <img
+              src="./img/icons/keyboard_arrow_right_white_48dp.svg"
+              alt="pointer3"
+            />
+          </li>
+        </ul>
+      </div>
     </nav>
     <main>
-      <section class="jumbotron">
+      <section class="jumbotron" id="about">
         <h1 class="title">Onate Makoji David</h1>
         <p class="subtitle">Software developer</p>
         <p class="description">
@@ -137,7 +165,7 @@
           <a href="#"><img src="./img/icons/Work.svg" alt="work-icon" /></a>
         </div>
       </div>
-      <section class="grid-section">
+      <section class="grid-section" id="portfolio">
         <h2 class="title alt-title">My Recent Works</h2>
         <div class="divider large-line"></div>
         <section class="card-section">
@@ -197,7 +225,7 @@
           </section>
         </div>
       </section>
-      <section class="contact-form">
+      <section class="contact-form" id="contact">
         <h1 class="contact-header">Contact Us</h1>
         <h1 class="desktop-contact-header">Let's Chat</h1>
         <div class="contact-group">
@@ -278,5 +306,6 @@
         </div>
       </div>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>

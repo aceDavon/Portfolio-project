@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(29, 44, 101);
   background-image: url('../img/icons/circle-2-header.svg');
@@ -11,6 +15,7 @@ body {
   background-position-x: -130px;
   background-position-y: 25px;
   background-size: 220px;
+  font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
@@ -24,6 +29,10 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 12px 50px;
+}
+
+.top-nav {
+  position: relative;
 }
 
 .top-menu {
@@ -340,13 +349,18 @@ main {
   display: none;
 }
 
+form {
+  width: 85%;
+  margin: auto;
+}
+
 .form-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  width: 100%;
+  margin: auto;
 }
 
 .form-list label {
@@ -394,6 +408,86 @@ main {
 
 .footer-pad {
   margin-top: 45px;
+}
+
+.menu-container {
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 5px 0;
+  background-color: rgb(29, 44, 101);
+  background-image: url('../img/icons/shape_mobile_menu_2.svg');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  position: fixed;
+  transition: all 0.35s ease-in-out;
+}
+
+.drop-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 12px 50px;
+  width: 100%;
+  background-image: url('../img/icons/shape_mobile_menu_1.svg');
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-position-x: right;
+  position: absolute;
+  bottom: 0;
+  top: 50px;
+  z-index: 5;
+}
+
+.drop-menu a {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #edecff;
+  text-decoration: none;
+}
+
+.drop-menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drop-menu img {
+  width: 15px;
+  height: 15px;
+}
+
+.close {
+  display: none;
+}
+
+.close img {
+  width: 38px;
+  height: 28px;
+}
+
+.menu:hover ~ .menu-container {
+  transform: scaleY(0.9);
+}
+
+.visible {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.close.visible {
+  position: absolute;
+  display: inline-block;
+  top: 8px;
+  left: 85%;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
