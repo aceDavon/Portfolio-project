@@ -37,15 +37,14 @@ const arr = [
   },
 ];
 const modal = document.getElementById('modal');
-const closeBtn = document.getElementById('modalClose');
-const btns = document.querySelectorAll('#btn');
+const btns = document.querySelectorAll('.btn');
 const btn = Array.from(btns);
 
 btn.forEach((el, i) => {
   el.addEventListener('click', (e) => {
     e.preventDefault();
-    let data;
-    x = arr[i];
+    let data = '';
+    const x = arr[i];
     data = `
    <section class="modal-header">
         <h1 class="modal-header-txt">${x.modalHeader.txt}</h1>
