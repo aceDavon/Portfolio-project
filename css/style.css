@@ -227,6 +227,12 @@ main {
   object-fit: contain;
 }
 
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .card-txt {
   color: #fff;
   padding: 5px 15px;

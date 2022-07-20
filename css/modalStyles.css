@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  position: relative;
+  height: auto;
+}
+
+.modal {
+  display: none;
+  background-color: rgba(255, 255, 255);
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.492);
+  backdrop-filter: blur(50px);
+  position: fixed;
+  height: min-content;
+  top: 15px;
+  bottom: 35px;
+}
+
+.showModal {
+  display: block;
+  background: rgba(255, 255, 255, 0.16);
+  margin: 0 25px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 25px 0;
+  width: 90%;
+  margin: auto;
+}
+
+.modal-header-txt {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+.modal-close {
+  width: 28px;
+  height: auto;
+}
+
+.modal-body {
+  padding: 12px 0;
+}
+
+.modal-body-img {
+  width: 90%;
+  height: auto;
+  margin: 6px auto;
+}
+
+.modal-body-img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.modal-body-txt {
+  width: 90%;
+  margin: auto;
+  padding: 6px 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.modal-stacks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 8px;
+  list-style-type: none;
+  color: #fff;
+  width: 90%;
+  margin: auto;
+}
+
+.modal-stacks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+  margin-bottom: 25px;
+}
+
+.modal-footer-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px !important;
+  height: 25px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.modal-footer-btn img {
+  width: 12px;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    left: 10%;
+    right: 10%;
+    height: min-content;
+  }
+
+  .modal-body-img {
+    width: 80%;
+    height: 300px;
+  }
+
+  .modal-body-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .modal-body-txt {
+    width: 60%;
+    margin: auto;
+    line-height: 18px;
+  }
+
+  .modal-stacks {
+    width: 60%;
+  }
+
+  .modal-footer {
+    flex-direction: row;
+    gap: 8px;
+  }
+}
