@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modalStyles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -33,7 +34,7 @@
         </li>
         <li class="top-menu-item motion">
           <a href="#" class="links"
-            ><img src="./img/icons/email.png" alt="mail-icon"
+            ><img src="./img/icons/email_white_48dp.svg" alt="mail-icon"
           /></a>
         </li>
       </ul>
@@ -126,10 +127,10 @@
           <a href="#"
             ><img
               id="alt-img"
-              src="./img/icons/down-arrow.png"
+              src="./img/icons/arrow_downward_white_48dp.svg"
               alt="down-arrow-icon"
           /></a>
-          <a href="#"><img src="./img/icons/Work.svg" alt="work-icon" /></a>
+          <a href="#"><img src="./img/icons/Work.svg" alt="work-icon2" /></a>
         </div>
         <ul class="social-links">
           <li>
@@ -160,7 +161,9 @@
         </ul>
         <div class="rel-links">
           <a href="#"
-            ><img src="./img/icons/down-arrow.png" alt="down-arrow-icon"
+            ><img
+              src="./img/icons/arrow_downward_white_48dp.svg"
+              alt="down-arrow-icon2"
           /></a>
           <a href="#"><img src="./img/icons/Work.svg" alt="work-icon" /></a>
         </div>
@@ -168,6 +171,7 @@
       <section class="grid-section" id="portfolio">
         <h2 class="title alt-title">My Recent Works</h2>
         <div class="divider large-line"></div>
+        <section class="modal" id="modal"></section>
         <section class="card-section">
           <div class="card-img"></div>
           <div class="card-txt">
@@ -191,7 +195,14 @@
                   <a href="#" class="card-footer-links">github</a>
                 </li>
               </ul>
-              <button class="btn" type="button">See project</button>
+              <button
+                class="btn"
+                id="btn"
+                type="button"
+                onclick='window.location.href="#modal";'
+              >
+                See project
+              </button>
             </div>
           </div>
         </section>
@@ -219,7 +230,14 @@
                     <a href="#" class="card-footer-links">github</a>
                   </li>
                 </ul>
-                <button class="btn" type="button">See project</button>
+                <button
+                  class="btn"
+                  id="btn"
+                  type="button"
+                  onclick='window.location.href="#modal";'
+                >
+                  See project
+                </button>
               </div>
             </div>
           </section>
@@ -307,5 +325,6 @@
       </div>
     </main>
     <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
