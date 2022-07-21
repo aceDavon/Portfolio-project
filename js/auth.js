@@ -1,6 +1,5 @@
 const form = document.querySelector('#form');
 const email = document.getElementById('email');
-const inputs = document.getElementsByClassName('formInput');
 const fullname = document.getElementById('fullname');
 const message = document.getElementById('textarea');
 
@@ -47,7 +46,7 @@ const isValidEmail = (input, emptyMsg, valErr) => {
   }
 
   return showErr(
-    '\n Please confirm that you entered a lower case text and a valid email'
+    '\n Please confirm that you entered a lower case text and a valid email',
   );
 };
 
@@ -61,11 +60,10 @@ const persistData = (status, data) => {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const empty =
-    '\n Please confirm that your entries are text, and not empty :(';
+  const empty = '\n Please confirm that your entries are text, and not empty :(';
   const formatStr = '\n Please enter a valid email address';
 
   const validEmail = isValidEmail(email, empty, formatStr);
   const { data, state } = validEmail;
-  return state == 'success' ? persistData(state, data) : '';
+  return state === 'success' ? persistData(state, data) : '';
 });
