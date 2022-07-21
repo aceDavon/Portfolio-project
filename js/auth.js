@@ -1,44 +1,38 @@
 const form = document.querySelector('#form');
-const fname = form.elements['fullname'];
-const email = form.elements['email'];
+const email = document.getElementById('email');
 
-const errMsg = (input, msg, state) => {
-  const errBox = input.parentNode.querySelector('small');
-  errBox.innertext = msg;
+const errMsg = (msg, state) => {
+  const errBox = document.getElementById('error');
+  errBox.innerText = msg;
 
   errBox.classList = state ? 'success' : 'failed';
 
   return state;
 };
 
-const showErr = (input, msg) => {
-  return errMsg(input, msg, (state = false));
-};
+function showErr(msg, state = false) {
+  return errMsg(msg, state);
+}
 
-const showValid = (input) => {
-  return errMsg(input, msg - '', (state = true));
-};
+function showValid(state = true, msg = '') {
+  return errMsg(msg, state);
+}
 
 const isFilled = (input, msg) => {
-  input.value.trim() === '' ? showErr(input, msg) : showValid(input);
+  const val = input.value;
+  return val.trim() !== '' ? showValid() : showErr(msg);
 };
 
 const isValidEmail = (input, emptyMsg, valErr) => {
-  const emailRegX =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegX = (/^(([^<>().,;:\s@"]+([^<>().,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+.)+[a-zA-Z]{2,}))$/);
   const lower = input.value.toLowerCase();
+  if (isFilled(input, emptyMsg) && input.value === lower) {
+    return emailRegX.test(lower) ? showValid() : showErr(valErr);
+  }
 
-  (
-    !isFilled
-      ? showErr(input, emptyMsg)
-      : emailRegX.test(input.value.trim())
-      ? showValid(input)
-      : input.value === lower
-      ? showValid(input)
-      : showErr(input, valErr)
-  )
-    ? true
-    : false;
+  return showErr(
+    'Please confirm that you entered a lower case text and a valid email',
+  );
 };
 
 form.addEventListener('submit', (e) => {
@@ -48,7 +42,5 @@ form.addEventListener('submit', (e) => {
 
   const validEmail = isValidEmail(email, empty, formatStr);
 
-  validEmail
-    ? console.log(true)
-    : console.log(isValidEmail(email, empty, formatStr));
+  return validEmail ? form.submit() : '';
 });

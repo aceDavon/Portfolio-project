@@ -37,7 +37,7 @@ const arr = [
   },
 ];
 const modal = document.getElementById('modal');
-const btns = document.querySelectorAll('.btn');
+const btns = document.querySelectorAll('.cardBtn');
 const btn = Array.from(btns);
 
 btn.forEach((el, i) => {
