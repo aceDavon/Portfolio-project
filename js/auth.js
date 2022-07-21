@@ -1,5 +1,8 @@
 const form = document.querySelector('#form');
 const email = document.getElementById('email');
+const inputs = document.getElementsByClassName('formInput');
+const fullname = document.getElementById('fullname');
+const message = document.getElementById('textarea');
 
 const errMsg = (msg, state) => {
   const errBox = document.getElementById('error');
@@ -24,23 +27,45 @@ const isFilled = (input, msg) => {
 };
 
 const isValidEmail = (input, emptyMsg, valErr) => {
-  const emailRegX = (/^(([^<>().,;:\s@"]+([^<>().,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+.)+[a-zA-Z]{2,}))$/);
+  const emailRegX = /^(([^<>().,;:\s@"]+([^<>().,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+.)+[a-zA-Z]{2,}))$/;
   const lower = input.value.toLowerCase();
   if (isFilled(input, emptyMsg) && input.value === lower) {
-    return emailRegX.test(lower) ? showValid() : showErr(valErr);
+    if (emailRegX.test(lower)) {
+      showValid();
+      return {
+        state: 'success',
+        data: [
+          {
+            email: lower,
+            name: fullname.value,
+            message: message.value,
+          },
+        ],
+      };
+    }
+    showErr(valErr);
   }
 
   return showErr(
-    'Please confirm that you entered a lower case text and a valid email',
+    '\n Please confirm that you entered a lower case text and a valid email'
   );
+};
+
+const persistData = (status, data) => {
+  status = true;
+  localStorage.setItem('portfolioData', JSON.stringify(data));
+
+  form.submit();
+  return true;
 };
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const empty = 'Please confirm that your entries are text, and not empty :(';
-  const formatStr = 'Please enter a valid email address';
+  const empty =
+    '\n Please confirm that your entries are text, and not empty :(';
+  const formatStr = '\n Please enter a valid email address';
 
   const validEmail = isValidEmail(email, empty, formatStr);
-
-  return validEmail ? form.submit() : '';
+  const { data, state } = validEmail;
+  return state == 'success' ? persistData(state, data) : '';
 });

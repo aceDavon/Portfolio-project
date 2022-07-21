@@ -256,16 +256,13 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-          <form
-            action="https://formspree.io/f/xbjwvdvq"
-            method="post"
-            id="form"
-            novalidate
-          >
+          <!-- action="https://formspree.io/f/xbjwvdvq" -->
+          <form method="post" id="form" novalidate>
             <ul class="form-list">
               <li>
                 <label for="fullname">Full Name</label>
                 <input
+                  class="formInput"
                   type="text"
                   name="fullname"
                   required
@@ -277,6 +274,7 @@
               <li>
                 <label for="email">Email</label>
                 <input
+                  class="formInput"
                   type="email"
                   name="email"
                   required
@@ -287,6 +285,7 @@
               <li>
                 <label for="textarea">Text Area</label>
                 <textarea
+                  class="formInput"
                   name="message"
                   required
                   maxlength="500"
