@@ -33,7 +33,7 @@ const isValidEmail = (input, emptyMsg, valErr) => {
     if (emailRegX.test(lower)) {
       showValid();
       return {
-        state: 'success',
+        state: 'succeed',
         data: [
           {
             email: lower,
@@ -67,5 +67,5 @@ form.addEventListener('submit', (e) => {
 
   const validEmail = isValidEmail(email, empty, formatStr);
   const { data, state } = validEmail;
-  return state == 'success' ? persistData(state, data) : '';
+  return state == 'succeed' ? persistData(state, data) : '';
 });
