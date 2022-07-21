@@ -23,6 +23,7 @@ body {
   height: min-content;
   top: 15px;
   bottom: 35px;
+  transition: all 0.45s ease-in-out;
 }
 
 .showModal {

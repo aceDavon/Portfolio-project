@@ -303,6 +303,10 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
+.btn:hover .modal {
+  transform: scale(0.95);
+}
+
 .btn:hover {
   box-shadow: 1px 4px 4px rgba(54, 54, 54, 0.082);
   background-color: #8075f4;

@@ -36,6 +36,10 @@ const arr = [
     },
   },
 ];
+const modalSpinning = [
+  { transform: 'rotate(360deg) scale(0)' },
+  { transform: 'rotate(0) scale(1.1)' },
+];
 const modal = document.getElementById('modal');
 const btns = document.querySelectorAll('.cardBtn');
 const btn = Array.from(btns);
@@ -84,6 +88,7 @@ btn.forEach((el, i) => {
   `;
     modal.innerHTML = data;
     modal.classList.toggle('showModal');
+    modal.animate(modalSpinning, 500, 1);
   });
 });
 
