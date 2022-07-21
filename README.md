@@ -82,14 +82,14 @@ Deploy the project with github pages from settings on the repo, select the main 
 
 - GitHub: [@githubhandle](https://github.com/aceDavon)
 - Twitter: [@twitterhandle](https://twitter.com/Sharkleshevon)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/david-makoji-b6090971)
+- LinkedIn: [@LinkedIn](https://linkedin.com/in/david-makoji-b6090971)
 
 ## 🤝 Contributing
 
-- GitHub: [@githubhandle](https://github.com/KebebewAbabu)
-- GitHub: [@githubhandle](https://github.com/DebbyMiressa)
-- GitHub: [@githubhandle](https://github.com/Rn486)
-- GitHub: [@githubhandle](https://github.com/SurafelGetachewT)
+- GitHub: [@Kebbew](https://github.com/KebebewAbabu)
+- GitHub: [@Debby](https://github.com/DebbyMiressa)
+- GitHub: [@Recillah](https://github.com/Rn486)
+- GitHub: [@Surafel](https://github.com/SurafelGetachewT)
 
 Contributions, issues, and feature requests are welcome!
 

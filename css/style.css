@@ -303,6 +303,10 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
+.btn:hover .modal {
+  transform: scale(0.95);
+}
+
 .btn:hover {
   box-shadow: 1px 4px 4px rgba(54, 54, 54, 0.082);
   background-color: #8075f4;
@@ -356,7 +360,7 @@ main {
 }
 
 form {
-  width: 85%;
+  width: 100%;
   margin: auto;
 }
 
@@ -366,6 +370,7 @@ form {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  width: 80%;
   margin: auto;
 }
 
@@ -375,7 +380,7 @@ form {
 
 .form-list input,
 .form-list textarea {
-  width: 327px;
+  width: 100%;
   padding: 12px 4px;
 }
 
@@ -394,10 +399,22 @@ form {
   border: 1px solid blue;
 }
 
+.form-btn {
+  width: 35%;
+  margin: auto;
+}
+
 .btn-alt {
-  margin-left: 35%;
+  width: 120px;
   height: 45px;
   cursor: pointer;
+}
+
+.failed {
+  color: red;
+  text-align: center;
+  font-size: small;
+  font-weight: 500;
 }
 
 .footer-icons img {
@@ -583,11 +600,12 @@ form {
   }
 
   .contact-form {
-    width: 45%;
+    width: 40%;
+    margin: auto;
   }
 
-  .contact-form form {
-    width: 65%;
+  .form-btn {
+    width: 25%;
     margin: auto;
   }
 
