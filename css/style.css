@@ -414,6 +414,7 @@ form {
   color: red;
   text-align: center;
   font-size: small;
+  text-transform: capitalize;
   font-weight: 500;
 }
 
