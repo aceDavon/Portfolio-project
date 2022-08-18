@@ -196,6 +196,10 @@ main {
   display: none;
 }
 
+.n-img {
+  order: 1;
+}
+
 .rel-links img {
   width: 25px;
   height: auto;
@@ -517,6 +521,10 @@ form {
   .top-menu {
     display: flex;
     list-style-type: none;
+  }
+
+  .n1-img {
+    order: 1;
   }
 
   .motion {
