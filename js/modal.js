@@ -35,6 +35,24 @@ const arr = [
       github: 'https://github.com/aceDavon/portfolio-project',
     },
   },
+  {
+    modalHeader: {
+      img: './img/icons/close_white_48dp.svg',
+      imgAlt: 'close_btn',
+      txt: 'Awesome Books',
+    },
+    modalBody: {
+      img: 'https://user-images.githubusercontent.com/84629565/182137025-2407fe77-369d-42c2-a737-6c1728426eec.jpg',
+      imgAlt: 'awesome-books-logo',
+      description:
+        'This educational project for Microverse Module 2 involves creating a straightforward website that shows a list of books and lets you add and remove books from that list. The intention is to use modules and learn ES6 syntax to make it more orderly. built with JavaScript, CSS and HTML.',
+    },
+    modalStacks: ['html', 'css', 'github'],
+    buttonRef: {
+      live: 'https://github.com/aceDavon/Awesome-books-with-modules',
+      github: 'https://github.com/aceDavon/Awesome-books-with-modules',
+    },
+  },
 ];
 const modalSpinning = [
   { transform: 'rotate(360deg) scale(0)' },
